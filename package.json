@@ -1,8 +1,8 @@
 {
   "name": "track-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Build environment for track app.",
-  "repository": "alfa-jpn/track-builder.git",
+  "repository": "yosami-framework/track-builder.git",
   "scripts": {
     "linter": "eslint ./"
   },
