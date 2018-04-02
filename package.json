@@ -1,10 +1,11 @@
 {
   "name": "track-builder",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Build environment for track app.",
   "repository": "yosami-framework/track-builder.git",
   "scripts": {
-    "linter": "eslint ./"
+    "linter": "eslint ./",
+    "test": "bin/build-example-app && ospec"
   },
   "author": "alfa-jpn",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "babel-preset-env": "^1.6.1",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
+    "dotenv": "^5.0.1",
+    "dotenv-webpack": "^1.5.5",
     "extract-loader": "^2.0.1",
     "file-loader": "^1.1.11",
     "node-sass": "^4.8.3",
@@ -32,6 +35,8 @@
   },
   "devDependencies": {
     "eslint": "^4.17.0",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "mithril": "^1.1.6",
+    "track-spec": "0.0.4"
   }
 }
