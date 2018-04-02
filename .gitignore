@@ -1,2 +1,11 @@
 # node
 node_modules/
+
+# example-app
+tests/fixtures/example-app/*
+!tests/fixtures/example-app/app/
+!tests/fixtures/example-app/config/
+!tests/fixtures/example-app/.env
+!tests/fixtures/example-app/.env.example
+!tests/fixtures/example-app/postcss.config.js
+!tests/fixtures/example-app/webpack.config.js
