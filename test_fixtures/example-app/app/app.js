@@ -14,4 +14,8 @@ module.exports = class Hoge {
   watch() {
     return `I'm watching ${process.env.FUGA}`;
   }
+
+  view() {
+    return require('./views/mock')();
+  }
 };

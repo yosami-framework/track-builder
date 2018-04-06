@@ -1,7 +1,7 @@
 #!/bin/bash
-cp -f ./package.json ./tests/fixtures/example-app/package.json &&
-sed -i -e 's/"track-builder"/"example-app"/g' ./tests/fixtures/example-app/package.json &&
-sed -i -e 's/"scripts": {/"scripts": {\n"build": "webpack -p",/g' ./tests/fixtures/example-app/package.json &&
-cd ./tests/fixtures/example-app &&
+cp -f ./package.json ./test_fixtures/example-app/package.json &&
+sed -i -e 's/"track-builder"/"example-app"/g' ./test_fixtures/example-app/package.json &&
+sed -i -e 's/"scripts": {/"scripts": {\n"build": "webpack -p",/g' ./test_fixtures/example-app/package.json &&
+cd ./test_fixtures/example-app &&
 npm install &&
 npm run build
