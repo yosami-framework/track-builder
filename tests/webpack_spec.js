@@ -9,7 +9,7 @@ t.describe('webpack.config.js', () => {
 
   t.describe('app.js', () => {
     t.beforeEach(() => {
-      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['app.js'].slice(1));
+      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['app.js'].replace('/my-app', '').slice(1));
     });
 
     t.it('Generated', () => {
@@ -33,7 +33,7 @@ t.describe('webpack.config.js', () => {
 
   t.describe('app.css', () => {
     t.beforeEach(() => {
-      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['app.scss'].slice(1));
+      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['app.scss'].replace('/my-app', '').slice(1));
     });
 
     t.it('Generated', () => {
