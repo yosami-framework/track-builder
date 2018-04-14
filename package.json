@@ -1,6 +1,6 @@
 {
   "name": "track-builder",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Build environment for track app.",
   "repository": "yosami-framework/track-builder.git",
   "scripts": {
@@ -31,12 +31,16 @@
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1",
-    "webpack-manifest-plugin": "^2.0.0-rc.2"
+    "webpack-manifest-plugin": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
     "eslint-config-google": "^0.9.1",
     "mithril": "^1.1.6",
+    "track-config": "0.0.5",
     "track-spec": "0.0.4"
+  },
+  "peerDependencies": {
+    "track-config": "0.0.x"
   }
 }
