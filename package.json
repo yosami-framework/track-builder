@@ -1,6 +1,6 @@
 {
   "name": "track-builder",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Build environment for track app.",
   "repository": "yosami-framework/track-builder.git",
   "scripts": {
