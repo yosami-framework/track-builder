@@ -39,7 +39,7 @@ t.describe('webpack.config.js', () => {
     t.it('Generated', () => {
       const content = loadFile();
       t.expect(
-        /background:url\(\/assets\/images\/[^\.]+\.png\)/.test(content)
+        /background:url\(\/my-app\/assets\/images\/[^\.]+\.png\)/.test(content)
       ).equals(true);
     });
   });
