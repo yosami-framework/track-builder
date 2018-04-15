@@ -1,3 +1,5 @@
+require('../config/application');
+
 module.exports = class Hoge {
   /**
    * Hello!

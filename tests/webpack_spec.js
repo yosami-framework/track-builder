@@ -43,4 +43,14 @@ t.describe('webpack.config.js', () => {
       ).equals(true);
     });
   });
+
+  t.describe('locale', () => {
+    t.beforeEach(() => {
+      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['ja.yml'].replace('/my-app', '').slice(1));
+    });
+
+    t.it('Generated', () => {
+      t.expect('{"en":{"hoge":{"fuga":"ふがああああああああ!"}}}').equals(loadFile().toString());
+    });
+  });
 });
