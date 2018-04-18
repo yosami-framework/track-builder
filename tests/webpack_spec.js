@@ -1,7 +1,7 @@
 const t        = require('track-spec');
 const fs       = require('fs');
 const path     = require('path');
-const Manifest = require('../test_fixtures/example-app/public/assets/manifest.json');
+const Manifest = require('../test_fixtures/example-app/public/manifest.json');
 
 t.describe('webpack.config.js', () => {
   const loadFile = (() => fs.readFileSync(file));
@@ -33,20 +33,20 @@ t.describe('webpack.config.js', () => {
 
   t.describe('app.css', () => {
     t.beforeEach(() => {
-      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['app.scss'].replace('/my-app', '').slice(1));
+      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['assets/app.scss'].replace('/my-app', '').slice(1));
     });
 
     t.it('Generated', () => {
       const content = loadFile();
       t.expect(
-        /background:url\(\/my-app\/assets\/images\/[^\.]+\.png\)/.test(content)
+        /background:url\(\/my-app\/assets\/[^\.]+\.png\)/.test(content)
       ).equals(true);
     });
   });
 
   t.describe('locale', () => {
     t.beforeEach(() => {
-      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['ja.yml'].replace('/my-app', '').slice(1));
+      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', Manifest['assets/ja.yml'].replace('/my-app', '').slice(1));
     });
 
     t.it('Generated', () => {
