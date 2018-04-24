@@ -20,8 +20,4 @@ module.exports = class Hoge {
   view() {
     return require('./views/mock')();
   }
-
-  boot() {
-    return require('../../../lib/boot.js.raw');
-  }
 };
