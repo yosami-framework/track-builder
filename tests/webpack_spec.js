@@ -17,17 +17,7 @@ t.describe('webpack.config.js', () => {
       t.expect(content.indexOf('__esModule')).notEquals(-1);
       t.expect(content.indexOf('function(){return"HOOOO GEEEE !!!"}')).notEquals(-1);
       t.expect(content.indexOf('function(){return"I\'m watching FUGAGAGAGA"}')).notEquals(-1);
-    });
-  });
-
-  t.describe('boot.js', () => {
-    t.beforeEach(() => {
-      file = path.resolve(__dirname, '../', 'test_fixtures', 'example-app', 'public', 'assets', 'boot.js');
-    });
-
-    t.it('Generated', () => {
-      const content = loadFile();
-      t.expect(content.indexOf('__esModule')).notEquals(-1);
+      t.expect(content.indexOf('meta[name="app:assets"]')).notEquals(-1);
     });
   });
 
