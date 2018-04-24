@@ -17,7 +17,6 @@ t.describe('webpack.config.js', () => {
       t.expect(content.indexOf('__esModule')).notEquals(-1);
       t.expect(content.indexOf('function(){return"HOOOO GEEEE !!!"}')).notEquals(-1);
       t.expect(content.indexOf('function(){return"I\'m watching FUGAGAGAGA"}')).notEquals(-1);
-      t.expect(content.indexOf('meta[name="app:assets"]')).notEquals(-1);
     });
   });
 
