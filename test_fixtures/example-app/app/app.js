@@ -20,4 +20,12 @@ module.exports = class Hoge {
   view() {
     return require('./views/mock')();
   }
+
+  device() {
+    if (process.browser) {
+      return `I'm browser`;
+    } else {
+      return `I'm not browser`;
+    }
+  }
 };
